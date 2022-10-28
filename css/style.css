@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 body{
     min-height: 100vh;
     background: linear-gradient(150deg, #111, #eee)
+
 }
 section{
     overflow: hidden;
@@ -13,6 +15,7 @@ section{
     color: whitesmoke;
     border-radius: 100px;
     box-shadow: 2px 2px 5px 5px black;
+    font-family: 'Merriweather', serif;
 }
 section>h1{
     color: lightgoldenrodyellow;
