@@ -1,0 +1,116 @@
+body{
+    min-height: 100vh;
+    background: linear-gradient(150deg, #111, #eee)
+}
+section{
+    overflow: hidden;
+    text-align: center;
+    background-color: gray;
+    width: 800px;
+    margin: auto;
+    height: 600px;
+    margin-top: 200px;
+    color: whitesmoke;
+    border-radius: 100px;
+    box-shadow: 2px 2px 5px 5px black;
+}
+section>h1{
+    color: lightgoldenrodyellow;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 100px;
+}
+section>p{
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(217, 230, 221);
+}
+input[type=radio]{
+    display: none;
+}
+.page-meter,.page-feet,.page-mile,.page-yard{
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#meter:checked ~ .mainContainer{
+    margin-left: 0;
+}
+#feet:checked ~ .mainContainer {
+    margin-left: -100%;
+}
+#mile:checked ~ .mainContainer{
+    margin-left: -200%;
+}
+#yard:checked ~ .mainContainer{
+    margin-left: -300%;
+}
+#meter:checked ~ .page-meter {
+    text-decoration: underline;
+    color: #111;
+}
+#feet:checked ~ .page-feet {
+    text-decoration: underline;
+    color: #111;
+}
+#mile:checked ~ .page-mile {
+    text-decoration: underline;
+    color: #111;
+}
+#yard:checked ~ .page-yard {
+    text-decoration: underline;
+    color: #111;
+}
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    width: 400%;
+    margin: auto;
+}
+.pageContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.pageContainer input{
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 20px;
+    background: #eee;
+}
+.pageContainer button{
+    padding: 10px;
+    margin: 5px auto;
+    width: 200px;
+    background-color: rgb(228, 88, 88);
+    border: none;
+    border-radius: 10px;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 15px;
+    box-shadow: 2px 2px 1px 1px black;
+}
+.pageContainer button:hover{
+    background-color: #333;
+    cursor: pointer;
+}
+.meterContainer,.feetContainer,.mileContainer,.yardContainer{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.meterContainer>div,
+.feetContainer>div,
+.mileContainer>div,
+.yardContainer>div{
+    padding: 10px;
+}
+.mainUnit{
+    display: flex;
+    flex-direction: column;
+}
+.mainUnit>div{
+    color: rgb(247, 253, 248);
+    font-weight: bold;
+    font-size: 20px;
+}

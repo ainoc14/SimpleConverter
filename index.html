@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Converter</title>
+    <script src="https://kit.fontawesome.com/1205ee9176.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+
+        <h1>Length Converter</h1>
+        <p> Choose your main unit</p>
+        <input type="radio" id="meter" name="page" checked>
+        <label for="meter" class="page-meter">Meter</label>
+        <input type="radio" id="feet" name="page">
+        <label for="feet" class="page-feet">Feet</label>
+        <input type="radio" id="mile" name="page">
+        <label for="mile" class="page-mile">Mile</label>
+        <input type="radio" id="yard" name="page">
+        <label for="yard" class="page-yard">Yard</label>
+
+        <div class="mainContainer">
+            <div class="pageContainer">
+                <div class="meterContainer">
+                    <div class="mainUnit">
+                        <div>
+                            <label for="inputValueMeter">Meters: </label>
+                            <input type="number" id="inputValueMeter" placeholder="Enter Value">
+                        </div>
+                        <h3>Convert To</h3>
+                        <button onClick="answerFeet()">Feet</button>
+                        <button onClick="answerMile()">Mile</button>
+                        <button onClick="answerYard()">Yard</button>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div>
+                        <input type="text" id="answer" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="pageContainer">
+                <div class="feetContainer">
+                    <div class="mainUnit">
+                        <div>
+                            <label for="inputValueFeet">Feet: </label>
+                            <input type="number" id="inputValueFeet" placeholder="Enter Value">
+                        </div>
+                        <h3>Convert To</h3>
+                        <button onClick="answerMeter()">Meter</button>
+                        <button onClick="answerMile2()">Mile</button>
+                        <button onClick="answerYard2()">Yard</button>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div>
+                        <input type="text" id="answer2" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="pageContainer">
+                <div class="mileContainer">
+                    <div class="mainUnit">
+                        <div>
+                            <label for="inputValueMile">Miles: </label>
+                            <input type="number" id="inputValueMile" placeholder="Enter Value">
+                        </div>
+                        <h3>Convert To</h3>
+                        <button onClick="answerMeter2()">Meter</button>
+                        <button onClick="answerFeet2()">Feet</button>
+                        <button onClick="answerYard3()">Yard</button>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div>
+                        <input type="text" id="answer3" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="pageContainer">
+                <div class="yardContainer">
+                    <div class="mainUnit">
+                        <div>
+                            <label for="inputValueYard">Yards: </label>
+                            <input type="number" id="inputValueYard" placeholder="Enter Value">
+                        </div>
+                        <h3>Convert To</h3>
+                        <button onClick="answerMeter3()">Meter</button>
+                        <button onClick="answerFeet3()">Feet</button>
+                        <button onClick="answerMile3()">Mile</button>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div>
+                        <input type="text" id="answer4" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
